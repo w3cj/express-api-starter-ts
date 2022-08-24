@@ -1,10 +1,11 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
 import morgan from 'morgan';
 import helmet from 'helmet';
 import cors from 'cors';
 
 import * as middlewares from './middlewares';
 import api from './api';
+import MessageResponse from './interfaces/MessageResponse';
 
 require('dotenv').config();
 
@@ -15,7 +16,7 @@ app.use(helmet());
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req: Request, res: Response) => {
+app.get<{}, MessageResponse>('/', (req, res) => {
   res.json({
     message: '🦄🌈✨👋🌎🌍🌏✨🌈🦄',
   });
