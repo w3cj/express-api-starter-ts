@@ -29,7 +29,7 @@ Development utilities:
   * ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
 * [typescript-eslint](https://typescript-eslint.io/)
   * Tooling which enables ESLint to support TypeScript.
-* [jest](https://www.npmjs.com/package/mocha)
+* [jest](https://www.npmjs.com/package/jest)
   * Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
 * [supertest](https://www.npmjs.com/package/supertest)
   * HTTP assertions made easy via superagent.
