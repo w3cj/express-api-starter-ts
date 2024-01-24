@@ -10,6 +10,10 @@ phases:
   build:
     commands:
       - npm run build
+  post_build:
+    commands:
+      - echo 'Contents of dist directory:'
+      - ls -R dist
 
 artifacts:
   files:
