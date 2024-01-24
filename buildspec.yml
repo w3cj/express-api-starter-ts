@@ -12,14 +12,12 @@ phases:
       - npm run build
   post_build:
     commands:
-      - echo 'Contents of dist directory:'
-      - ls -R dist
-      - echo 'Contents of package.json directory:'
-      - ls -R package.json
+      - echo 'Contents of build directory:'
+      - ls -R build
 
 artifacts:
   files:
     - package.json
     - package-lock.json
-    - 'dist/**/*'
+    - 'build/**/*'
   discard-paths: yes
