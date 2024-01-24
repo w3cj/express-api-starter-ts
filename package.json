@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
-    "start": "node index.js",
+    "start": "node build/src/index.js",
     "dev": "nodemon src/index.ts",
     "lint": "eslint --fix src test",
     "test": "jest",
