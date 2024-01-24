@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: latest
+    commands:
+      - npm install -g typescript
+      - npm install
+  build:
+    commands:
+      - npm build
+      - npm start
+
+artifacts:
+  files:
+    - package.json
+    - package-lock.json
+    - 'build/**/*'
+  discard-paths: yes
