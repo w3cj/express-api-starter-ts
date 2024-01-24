@@ -15,5 +15,5 @@ artifacts:
   files:
     - package.json
     - package-lock.json
-    - 'build/**/*'
+    - 'dist/**/*'
   discard-paths: yes
