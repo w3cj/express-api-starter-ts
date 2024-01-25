@@ -5,7 +5,7 @@ import cors from 'cors';
 
 import * as middlewares from './middlewares';
 import api from './api';
-import MessageResponse from './interfaces/MessageResponse';
+import TestResponse from './interfaces/TestResponse';
 
 require('dotenv').config();
 
@@ -16,9 +16,13 @@ app.use(helmet());
 app.use(cors());
 app.use(express.json());
 
-app.get<{}, MessageResponse>('/', (req, res) => {
+app.get<{}, TestResponse>('/', (req, res) => {
   res.json({
     message: '🦄🌈✨👋🌎🌍🌏✨🌈🦄',
+    env: {
+      port: process.env.PORT,
+      randomApiKey: process.env.RANDOM_API_KEY,
+    },
   });
 });
 
