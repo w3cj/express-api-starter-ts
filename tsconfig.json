@@ -1,14 +1,27 @@
 {
+  "ts-node": {
+    "transpileOnly": true,
+    "require": ["typescript-transform-paths/register"]
+  },
   "compilerOptions": {
     "outDir": "dist",
     "sourceMap": true,
-    "target": "esnext",
+    "target": "ES2022",
     "module": "commonjs",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": true,
     "strict": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@utils/*": ["src/utils/*"],
+      "@middelwares/*": ["src/middelwares/*"]
+    },
+    "plugins": [
+      { "transform": "typescript-transform-paths" },
+      { "transform": "typescript-transform-paths", "afterDeclarations": true }
+    ]
   },
   "include": ["./*.js", "src/**/*.ts", "test/**/*.ts"]
 }
