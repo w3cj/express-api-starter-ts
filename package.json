@@ -25,8 +25,7 @@
     "express": "^4.19.2",
     "helmet": "^7.1.0",
     "mongodb": "^6.8.0",
-    "morgan": "^1.10.0",
-    "zod": "^3.23.8"
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
@@ -46,6 +45,7 @@
     "supertest": "^7.0.0",
     "ts-jest": "^29.2.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "zod": "^3.23.8"
   }
 }
