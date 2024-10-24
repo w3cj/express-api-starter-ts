@@ -1,0 +1,18 @@
+{
+    "printWidth": 100,
+    "tabWidth": 4,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "quoteProps": "consistent",
+    "plugins": ["@trivago/prettier-plugin-sort-imports"],
+    "importOrder": ["<THIRD_PARTY_MODULES>", "^rootpath$", "(^src/.*)$", "^(test/.*)$"],
+    "importOrderSeparation": false,
+    "importOrderSortSpecifiers": true,
+    "importOrderParserPlugins": ["typescript"],
+    "importOrderTypeScriptVersion": "5.5.4"
+}

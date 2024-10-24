@@ -6,9 +6,14 @@
     "module": "commonjs",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "noImplicitAny": true,
     "strict": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/*.js"],
+      "scripts/*": ["scripts/*.js"],
+      "test/*": ["test/*.js"]
+    }
   },
   "include": [
     "./*.js",
