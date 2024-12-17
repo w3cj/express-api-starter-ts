@@ -3,13 +3,16 @@ import morgan from 'morgan';
 import helmet from 'helmet';
 import cors from 'cors';
 
+require('dotenv').config();
+
 import * as middlewares from './middlewares';
 import api from './api';
 import MessageResponse from './interfaces/MessageResponse';
-
-require('dotenv').config();
+import connectDB from './config/db';
 
 const app = express();
+
+connectDB();
 
 app.use(morgan('dev'));
 app.use(helmet());
