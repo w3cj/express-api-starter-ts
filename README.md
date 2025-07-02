@@ -5,7 +5,7 @@ A JavaScript Express v5 starter template with sensible defaults.
 How to use this template:
 
 ```sh
-npx create-express-api --typescript --directory my-api-name
+pnpm dlx create-express-api --typescript --directory my-api-name
 ```
 
 Includes API Server utilities:
@@ -35,23 +35,23 @@ Development utilities:
 ## Setup
 
 ```
-npm install
+pnpm install
 ```
 
 ## Lint
 
 ```
-npm run lint
+pnpm run lint
 ```
 
 ## Test
 
 ```
-npm run test
+pnpm run test
 ```
 
 ## Development
 
 ```
-npm run dev
+pnpm run dev
 ```
