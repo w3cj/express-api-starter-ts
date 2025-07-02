@@ -1,18 +1,18 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
-    "sourceMap": true,
     "target": "esnext",
     "module": "commonjs",
+    "strict": true,
+    "noImplicitAny": true,
+    "outDir": "dist",
+    "sourceMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "noImplicitAny": true,
-    "strict": true,
     "skipLibCheck": true
   },
   "include": [
     "./*.js",
     "src/**/*.ts",
-    "test/**/*.ts",
-  ],
+    "test/**/*.ts"
+  ]
 }
