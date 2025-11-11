@@ -32,7 +32,8 @@ Development utilities:
 - [supertest](https://www.npmjs.com/package/supertest)
   - HTTP assertions made easy via superagent.
 
-## Setup
+# Setup
+## pnpm setup
 
 ```
 pnpm install
@@ -54,4 +55,22 @@ pnpm run test
 
 ```
 pnpm run dev
+```
+
+
+## Docker setup
+
+```
+Install docker <If it isn't installed>
+```
+
+## Build the image
+```
+docker build -t <name> .  
+```
+
+## Run the image
+
+```
+ docker run -t -p <port>:3000 --name <container name> express-api-starter-ts:latest
 ```
