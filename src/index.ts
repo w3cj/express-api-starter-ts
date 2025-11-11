@@ -1,7 +1,8 @@
 import app from "./app.js";
 import { env } from "./env.js";
 
-const port = env.PORT;
+const defaultPort = 3000
+const port = env.PORT || defaultPort;
 const server = app.listen(port, () => {
   /* eslint-disable no-console */
   console.log(`Listening: http://localhost:${port}`);
